@@ -1,0 +1,35 @@
+[
+  {
+    "name": "exists",
+    "request": {
+      "userName": "automation",
+      "password": "Automation@!@123"
+    },
+    "response": {
+      "code": "1204",
+      "message": "User exists!"
+    }
+  },
+  {
+    "name": "invalid-data",
+    "request": {
+      "userName": "automation",
+      "password": "Auto@2"
+    },
+    "response": {
+      "code": "1300",
+      "message": "Passwords must have at least one non alphanumeric character, one digit ('0'-'9'), one uppercase ('A'-'Z'), one lowercase ('a'-'z'), one special character and Password must be eight characters or longer."
+    }
+  },
+  {
+    "name": "required",
+    "request": {
+      "userName": "automation",
+      "password": ""
+    },
+    "response": {
+      "code": "1200",
+      "message": "UserName and Password required."
+    }
+  }
+]
